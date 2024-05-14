@@ -1,0 +1,74 @@
+.event-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.event-card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  list-style: none;
+  width: 300px;
+}
+
+.event-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #333;
+  line-height: 2rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+}
+
+.event-description {
+  font-size: 1em;
+  color: #666;
+  line-height: 2rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 2;
+}
+
+.event-date,
+.event-organizer {
+  font-size: 0.9em;
+  color: #888;
+  margin-top: 5px;
+  line-height: 2rem;
+  max-height: 8rem;
+  -webkit-box-orient: vertical;
+  display: block;
+  display: -webkit-box;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+  div {
+    max-width: calc(100vw - 48px);
+    max-height: calc(100vh - 24px);
+  }
+}
